@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Comprobá la estructura y el dígito de control de un IMEI. Servicio gratuito DattaQuest Argentina.">
+<meta name="description" content="Validá el IMEI e identificá marca y modelo mediante una base TAC abierta. El bloqueo requiere una fuente autorizada. Servicio gratuito DattaQuest Argentina.">
 <meta name="theme-color" content="#0a0a0b">
 <link rel="icon" href="../../lupacel.png" type="image/png">
 <title>Verificador de IMEI | DattaQuest Argentina</title>
@@ -30,7 +30,7 @@
 </button>
 <div class="collapse navbar-collapse" id="navbarSupportedContent">
 <ul class="navbar-nav nav-dropdown nav-right mx-auto" data-app-modern-menu="true">
-<li class="nav-item"><a class="puta" href="../../index.html" onmousedown="sonido.play()"> INICIO </a></li>
+<li class="nav-item"><a class="nav-link link text-primary display-4" href="../../index.html" onmousedown="sonido.play()"> INICIO </a></li>
 <li>
 <div id="accordion">
 <div class="card">
@@ -57,6 +57,7 @@
 </div>
 </div>
 </div>
+</li>
 <li class="nav-item dq-otros-nav">
 <div class="dq-nav-box card">
 <div class="dq-nav-heading card-header" id="dqHeadingOtros">
@@ -83,7 +84,6 @@
 </li>
 <li class="nav-item"><a class="nav-link link text-primary display-4" href="../../Contacto.html" onmousedown="sonido.play()"> CONTACTO </a>
 </li>
-</li>
 </ul>
 </div>
 </div>
@@ -91,9 +91,9 @@
 </section>
 <main class="dq-main" id="contenido">
  <nav class="dq-trail" aria-label="Ruta de navegación"><a href="../../index.html">Inicio</a><span>›</span><a href="../index.html">Otros servicios</a><span>›</span><span>Verificador de IMEI</span></nav>
- <header class="dq-hero"><span class="dq-eyebrow">Servicio gratuito · Argentina</span><h1>Verificador de IMEI</h1><p>Comprobá la estructura y el dígito de control de un IMEI.</p></header>
- <div class="dq-grid"><section class="dq-panel" aria-labelledby="tituloFormulario"><h2 id="tituloFormulario">Validar número de IMEI</h2><form id="dqForm" novalidate><label for="dqValue" class="dq-field">IMEI del equipo (15 dígitos)</label><input class="dq-input" id="dqValue" type="text" autocomplete="off" inputmode="numeric" placeholder="Ingresá los 15 dígitos" maxlength="20" required><p class="dq-help">Encontralo marcando *#06# en el celular. La validación matemática funciona sin consultar servidores.</p><div class="dq-actions"><button class="dq-btn" type="submit">Verificar formato</button></div></form><div id="dqResult" class="dq-result" aria-live="polite"></div></section>
- <aside class="dq-panel"><h3>Información del servicio</h3><ul class="dq-list"><li>Comprueba longitud y dígito de control mediante el algoritmo Luhn.</li><li>Una verificación de lista negra por robo o extravío requiere conexión con una fuente autorizada.</li><li>Un resultado válido no confirma que el dispositivo no esté bloqueado.</li></ul><p class="dq-source">Un IMEI matemáticamente correcto no garantiza que el equipo sea legítimo o que no esté denunciado.</p><p><a href="https://www.enacom.gob.ar/imei" rel="noopener noreferrer" target="_blank">Consulta de bloqueo — ENACOM</a></p></aside></div>
+ <header class="dq-hero"><span class="dq-eyebrow">Servicio gratuito · Argentina</span><h1>Verificador de IMEI</h1><p>Validá el IMEI e identificá marca y modelo mediante una base TAC abierta. El bloqueo requiere una fuente autorizada.</p></header>
+ <div class="dq-grid"><section class="dq-panel" aria-labelledby="tituloFormulario"><h2 id="tituloFormulario">Verificar IMEI, marca y modelo</h2><form id="dqForm" novalidate><label for="dqValue" class="dq-field">IMEI del equipo (15 dígitos)</label><input class="dq-input" id="dqValue" type="text" autocomplete="off" inputmode="numeric" placeholder="Ingresá los 15 dígitos" maxlength="20" required><p class="dq-help">Encontralo marcando *#06#. La validación funciona localmente. El catálogo TAC se descarga sin enviar tu IMEI; el bloqueo necesita una API autorizada.</p><div class="dq-actions"><button class="dq-btn" type="submit">Consultar IMEI</button></div></form><div id="dqResult" class="dq-result" aria-live="polite"></div></section>
+ <aside class="dq-panel"><h3>Información del servicio</h3><ul class="dq-list"><li>Comprueba longitud y dígito de control mediante el algoritmo Luhn.</li><li>Busca marca y modelo por TAC en la base comunitaria Osmocom (CC-BY-SA 3.0), sin enviar el IMEI completo.</li><li>Una verificación de lista negra por robo o extravío requiere conexión con una fuente autorizada.</li><li>Un resultado válido no confirma que el dispositivo no esté bloqueado.</li></ul><p class="dq-source">Un IMEI matemáticamente correcto o un TAC identificado no garantiza que el equipo sea legítimo o que no esté denunciado. <a href="https://tacdb.osmocom.org/" target="_blank" rel="noopener noreferrer">Datos Osmocom</a> (© Harald Welte y colaboradores, CC-BY-SA 3.0).</p><p><a href="https://www.enacom.gob.ar/imei" rel="noopener noreferrer" target="_blank">Consulta de bloqueo — ENACOM</a></p></aside></div>
  <section aria-labelledby="otrosDisponibles"><h2 id="otrosDisponibles" style="color:#f5c85f;font-size:23px;margin-top:40px">Explorá otros servicios</h2><div class="dq-services"><a class="dq-service-link" href="../prestadores/index.html"><span>Buscador de prestadores</span><small>Servicio gratuito</small></a>
 <a class="dq-service-link" href="../prefijos/index.html"><span>Prefijos telefónicos</span><small>Servicio gratuito</small></a>
 <a class="dq-service-link" href="../dolar/index.html"><span>Cotización del dólar</span><small>Servicio gratuito</small></a>
@@ -109,6 +109,9 @@
 <script src="../../index_files/navbar-dropdown.js.descarga"></script>
 <script src="../comun/nav.js"></script>
 <script src="../comun/base.js"></script>
+<script src="../comun/api-config.js"></script>
+<script src="../comun/api-client.js"></script>
+<script src="./js/tac-lookup.js"></script>
 <script src="./js/consulta.js"></script>
 </body>
 </html>

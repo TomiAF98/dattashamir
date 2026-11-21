@@ -66,3 +66,6 @@ body.dq-page:before{content:'';position:fixed;inset:0;pointer-events:none;backgr
 .dq-page #accordion > .card,
 .dq-page #accordion > .card > .card-header {background:transparent!important;border:0!important;box-shadow:none!important;padding:0!important;margin:0!important}
 .dq-page .navbar .nav-item > a:not(.dq-service-link){color:#f5c85f!important}
+
+.dq-result-action{display:inline-block;margin-top:12px;color:#f5c85f!important;text-decoration:underline;font-weight:650;}
+.dq-result-action:focus-visible{outline:2px solid white;outline-offset:3px}

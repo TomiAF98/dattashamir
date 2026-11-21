@@ -30,7 +30,7 @@
 </button>
 <div class="collapse navbar-collapse" id="navbarSupportedContent">
 <ul class="navbar-nav nav-dropdown nav-right mx-auto" data-app-modern-menu="true">
-<li class="nav-item"><a class="puta" href="../../index.html" onmousedown="sonido.play()"> INICIO </a></li>
+<li class="nav-item"><a class="nav-link link text-primary display-4" href="../../index.html" onmousedown="sonido.play()"> INICIO </a></li>
 <li>
 <div id="accordion">
 <div class="card">
@@ -57,6 +57,7 @@
 </div>
 </div>
 </div>
+</li>
 <li class="nav-item dq-otros-nav">
 <div class="dq-nav-box card">
 <div class="dq-nav-heading card-header" id="dqHeadingOtros">
@@ -83,7 +84,6 @@
 </li>
 <li class="nav-item"><a class="nav-link link text-primary display-4" href="../../Contacto.html" onmousedown="sonido.play()"> CONTACTO </a>
 </li>
-</li>
 </ul>
 </div>
 </div>
@@ -92,7 +92,7 @@
 <main class="dq-main" id="contenido">
  <nav class="dq-trail" aria-label="Ruta de navegación"><a href="../../index.html">Inicio</a><span>›</span><a href="../index.html">Otros servicios</a><span>›</span><span>Radicación de patente</span></nav>
  <header class="dq-hero"><span class="dq-eyebrow">Servicio gratuito · Argentina</span><h1>Radicación de patente</h1><p>Consultá dónde se encuentra radicado un vehículo argentino.</p></header>
- <div class="dq-grid"><section class="dq-panel" aria-labelledby="tituloFormulario"><h2 id="tituloFormulario">Buscar radicación de patente</h2><form id="dqForm" novalidate><label for="dqValue" class="dq-field">Dominio / patente del vehículo</label><input class="dq-input" id="dqValue" type="text" autocapitalize="characters" autocomplete="off" placeholder="Ej.: ABC123 o AB123CD" maxlength="11" required><p class="dq-help">Formatos usuales para autos: ABC123 y AB123CD. Esta prueba no consulta registros automotores.</p><div class="dq-actions"><button class="dq-btn" type="submit">Consultar patente</button></div></form><div id="dqResult" class="dq-result" aria-live="polite"></div></section>
+ <div class="dq-grid"><section class="dq-panel" aria-labelledby="tituloFormulario"><h2 id="tituloFormulario">Buscar radicación de patente</h2><form id="dqForm" novalidate><label for="dqValue" class="dq-field">Dominio / patente del vehículo</label><input class="dq-input" id="dqValue" type="text" autocapitalize="characters" autocomplete="off" placeholder="Ej.: ABC123 o AB123CD" maxlength="11" required><p class="dq-help">Formatos usuales para autos: ABC123 y AB123CD. La consulta oficial de DNRPA requiere un código verificador. Con una API autorizada configurada, esta página puede mostrar resultados.</p><div class="dq-actions"><button class="dq-btn" type="submit">Consultar patente</button></div></form><div id="dqResult" class="dq-result" aria-live="polite"></div></section>
  <aside class="dq-panel"><h3>Información del servicio</h3><ul class="dq-list"><li>La jurisdicción de radicación no puede obtenerse de forma fiable interpretando la patente.</li><li>Se requerirá información actualizada de DNRPA mediante un mecanismo habilitado.</li><li>Este formulario no consulta propietarios ni revela datos personales.</li></ul><p class="dq-source">La radicación puede modificarse. No se infiere de manera fiable a partir de las letras de la patente.</p><p><a href="https://www.argentina.gob.ar/propiedadautomotor/consultar-radicacion-vehiculo" rel="noopener noreferrer" target="_blank">Consulta de radicación — DNRPA</a></p></aside></div>
  <section aria-labelledby="otrosDisponibles"><h2 id="otrosDisponibles" style="color:#f5c85f;font-size:23px;margin-top:40px">Explorá otros servicios</h2><div class="dq-services"><a class="dq-service-link" href="../prestadores/index.html"><span>Buscador de prestadores</span><small>Servicio gratuito</small></a>
 <a class="dq-service-link" href="../prefijos/index.html"><span>Prefijos telefónicos</span><small>Servicio gratuito</small></a>
@@ -109,6 +109,8 @@
 <script src="../../index_files/navbar-dropdown.js.descarga"></script>
 <script src="../comun/nav.js"></script>
 <script src="../comun/base.js"></script>
+<script src="../comun/api-config.js"></script>
+<script src="../comun/api-client.js"></script>
 <script src="./js/consulta.js"></script>
 </body>
 </html>
